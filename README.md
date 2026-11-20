@@ -1,84 +1,103 @@
-# Hi, I'm Michał Zabielski 👋
+# Michał Zabielski
 
-**E-commerce consultant · Founder & CEO of [ENDORA](https://endora.pl) · Creator of [Endora Commerce](https://commerce.endora.software)**
+**Software engineer & founder · B2B commerce architecture · AI-assisted, spec-driven development**
 
-I build B2B sales platforms and CRMs that actually sell, for manufacturers and distributors.
-I've been working where business meets technology in online sales for over 12 years, and I put problems before tools.
+I design and build B2B sales systems for manufacturers and distributors: commerce platforms, CRMs, and the integrations that connect them to ERP, PIM and WMS. I've been writing code since I was a kid and building e-commerce professionally for 12+ years. Today I run [ENDORA](https://endora.pl) and lead the development of **[Endora Commerce](https://github.com/endora-commerce/endora-commerce)**, an open-source B2B platform.
 
----
-
-### 🛒 What I'm building: Endora Commerce
-
-[**Endora Commerce**](https://github.com/endora-commerce/endora-commerce) is an open-source (MIT), modular **B2B e-commerce platform** that adapts to your processes instead of forcing you to adapt to it.
-
-- 🧩 **Modular**: storefront, admin, a built-in CRM, tasks, projects and an AI assistant, all as composable modules
-- 📐 **Spec-Driven Development**: specification before code, configuration instead of code
-- 🔌 **Integration-ready**: ERP, PIM, WMS, CRM
-- 🏠 **Your code, your server**: self-host it for free, or use the managed Endora Commerce Cloud
-- ⚡ **Fast to launch**: a working B2B platform in about 4 weeks
-
-Built with TypeScript, Node.js, Fastify, Next.js, React and PostgreSQL.
-
-👉 [Website](https://commerce.endora.software) · [Docs](https://docs.commerce.endora.software/) · [Repository](https://github.com/endora-commerce/endora-commerce) · [Discord](https://discord.gg/GJ2Yk9CvY)
-
-> Considering a B2B platform, or stuck with one? [Send me a message](https://michalzabielski.pl).
+My niche is where software architecture meets business process: turning messy B2B sales operations (quotes, customer-specific pricing, credit limits, ERP sync) into clean, modular software.
 
 ---
 
-### 🏢 ENDORA: B2B e-commerce experts since 2013
+## 🛒 Endora Commerce, my main project
 
-I founded [Endora](https://endora.pl) in 2013. We've delivered **120+ projects** for clients in **5 countries** (Poland, Germany, UK, Ireland, Estonia), mostly in manufacturing, automotive parts, technical distribution and wholesale, and FMCG and beauty.
+[![Repo](https://img.shields.io/badge/endora--commerce-endora--commerce-181717?style=flat&logo=github)](https://github.com/endora-commerce/endora-commerce)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/endora-commerce/endora-commerce/blob/main/LICENSE)
+[![npm](https://img.shields.io/npm/v/@endora-commerce/cli?label=npm&logo=npm)](https://www.npmjs.com/package/@endora-commerce/cli)
+[![Docs](https://img.shields.io/badge/docs-docs.commerce.endora.software-6322C8)](https://docs.commerce.endora.software)
 
-What we do:
+An open-source B2B and B2C commerce platform where every business capability is a module you can install, switch off or replace. I'm the creator and main contributor.
 
-- **B2B sales platforms**: implementation, maintenance and development (Endora Commerce, Magento / Adobe Commerce, Shopware, Sylius, PrestaShop, WooCommerce)
-- **Custom CRM systems** for B2B sales teams
-- **Integrations** with ERP, CRM, PIM, WMS and OMS (SAP, Comarch, enova365, Symfonia, Subiekt, Pimcore, Akeneo, HubSpot, Pipedrive…)
-- **Consulting and audits** for B2B e-commerce and digital transformation, including AI and AR/VR
+**Architecture**
+- **Backend:** Node.js + **Fastify**, **MikroORM** on **PostgreSQL**, Redis, Meilisearch
+- **Admin:** React, with a permissioned admin shell, a page and e-mail builder, and a ⌘K command palette with an AI assistant
+- **Storefront:** server-rendered **Next.js** and PWA, generated as a standalone app that the merchant owns
+- **pnpm monorepo** of publishable packages: `platform`, `modules`, `contracts`, `admin-kit`, `page-builder-core`, `llm-client`, `test-kit`, a CLI and a `create-endora-commerce` installer
+- **Deployment:** Docker / Compose; API, admin and storefront can run on one host or on separate machines
+
+**B2B domain, built in:** customer organisations with roles and credit limits, organisation pricing, RFQs and quotes, quick order, shopping lists, multi-tenant / multi-channel / multi-currency, plus vendor-neutral payment, shipment, ERP and PIM connector layers that third parties can write adapters for.
+
+**How it's built**
+- 📐 **Spec-Driven Development:** every feature starts as a written specification (`specs/`, Spec Kit) before any code
+- 🤖 **AI agents as developers:** most of the code is written by AI coding agents (Claude Code, Codex, Cursor), guided by specs and repo-level agent instructions, then reviewed and gated by humans and CI
+- ✅ **Quality gates in CI:** backend test suite, public acceptance tests, boot and pack gates, storefront build, Lighthouse, Changesets-based releases to npm, DCO
+- 🔒 **Security:** a security policy and regular white-box audits of the open core and the paid modules
+- 🧩 **Open core:** MIT core, with commercial modules (payment gateways, couriers, ERP/PIM sync, Polish KSeF e-invoicing) behind the same public interfaces
+
+```bash
+npx create-endora-commerce@latest my-shop
+cd my-shop && pnpm run dev:all
+```
 
 ---
 
-### 🧭 Background
+## 🔌 What I work on
 
-- 💻 Started coding as a kid; first paid freelance work while still in middle school
-- 🎓 PhD studies at the Military University of Technology (WAT) in Warsaw, where I taught Graph & Network Theory and Web 2.0
-- 📊 Co-created **MergeBit Analyzer**, an AI-powered web analytics tool for e-commerce
-- 🤖 In 2026, turned 12+ years of e-commerce experience into a product built with AI agents: Endora Commerce
-
----
-
-### 🎙️ Sharing knowledge
-
-- **[Manufaktura e-commerce](https://open.spotify.com/show/4q8gC1FjpHLAmCjYAkrK8P)**: my podcast about e-commerce, in Polish ([Spotify](https://open.spotify.com/show/4q8gC1FjpHLAmCjYAkrK8P) · [Apple Podcasts](https://podcasts.apple.com/us/podcast/manufaktura-e-commerce/id1851469331) · [YouTube](https://www.youtube.com/@MichalZabielskiPL))
-- Quoted as an e-commerce expert in Forbes, Rzeczpospolita, Onet, Gazeta Wyborcza, Wirtualne Media and others
-- Conference speaker and panelist on B2B sales and e-commerce
-- Writing at [michalzabielski.pl/blog](https://michalzabielski.pl/blog)
+| Area | Details |
+| --- | --- |
+| **B2B commerce platforms** | Endora Commerce, Magento / Adobe Commerce, Shopware, Sylius, PrestaShop, WooCommerce |
+| **Integrations** | ERP (SAP, Comarch XL, enova365, Symfonia, Subiekt GT), PIM (Pimcore, Akeneo, Ergonode), CRM (HubSpot, Pipedrive, Livespace), WMS / OMS |
+| **Custom software** | Dedicated CRMs for B2B sales teams, PWAs, internal tools |
+| **Data & AI** | LLM-based features and agents, analytics and BI (Power BI, Looker Studio, Qlik, Streamlit) |
+| **Architecture & consulting** | Platform selection, technical audits, integration architecture, build-vs-buy decisions |
 
 ---
 
-### 🛠️ Tech I work with
+## 🛠️ Tech stack
 
+**Now:**
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
 ![Fastify](https://img.shields.io/badge/Fastify-000000?style=flat&logo=fastify&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
-![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat&logo=vuedotjs&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
+![Meilisearch](https://img.shields.io/badge/Meilisearch-FF5CAA?style=flat&logo=meilisearch&logoColor=white)
+![pnpm](https://img.shields.io/badge/pnpm-F69220?style=flat&logo=pnpm&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
+![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat&logo=anthropic&logoColor=white)
+
+**Also:**
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
 ![Symfony](https://img.shields.io/badge/Symfony-000000?style=flat&logo=symfony&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white)
 ![Magento](https://img.shields.io/badge/Magento-EE672F?style=flat&logo=magento&logoColor=white)
 ![Shopware](https://img.shields.io/badge/Shopware-189EFF?style=flat&logo=shopware&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat&logo=vuedotjs&logoColor=white)
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=61DAFB)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat&logo=powerbi&logoColor=black)
 
 ---
 
-### 📫 Let's connect
+## 🧭 Background
 
-[![Website](https://img.shields.io/badge/michalzabielski.pl-5A2D82?style=for-the-badge&logo=googlechrome&logoColor=white)](https://michalzabielski.pl)
+- **2013:** started as a web developer at an e-commerce software house in Warsaw and founded **ENDORA**
+- **2013–2017:** PhD studies at the Military University of Technology (WAT), teaching Graph & Network Theory and Web 2.0
+- **2017:** co-created **MergeBit Analyzer**, a web analytics tool for e-commerce with an AI engine
+- **2013–today:** 120+ delivered projects at Endora for clients in 5 countries, mostly manufacturing, automotive parts, technical distribution and wholesale
+- **2026:** started Endora Commerce, using AI agents and spec-driven development to turn 12+ years of B2B know-how into an open-source product
+
+I also host **[Manufaktura e-commerce](https://open.spotify.com/show/4q8gC1FjpHLAmCjYAkrK8P)**, a Polish podcast about e-commerce, and write at [michalzabielski.pl](https://michalzabielski.pl/blog).
+
+---
+
+## 📫 Contact
+
+Working on a B2B platform, an ERP integration, or wondering whether to build or buy? Get in touch.
+
+[![Website](https://img.shields.io/badge/michalzabielski.pl-6322C8?style=for-the-badge&logo=googlechrome&logoColor=white)](https://michalzabielski.pl)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mzabielskipl)
+[![Discord](https://img.shields.io/badge/Endora_Commerce-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/GJ2Yk9CvY)
 [![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/MZabielskiPL)
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@MichalZabielskiPL)
-[![Endora](https://img.shields.io/badge/endora.pl-5A2D82?style=for-the-badge)](https://endora.pl)
