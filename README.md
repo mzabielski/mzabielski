@@ -72,8 +72,8 @@ cd my-shop && pnpm run dev:all
 
 | Area | Details |
 | --- | --- |
-| **B2B commerce platforms** | Endora Commerce, Magento / Adobe Commerce, Shopware, Sylius, PrestaShop, WooCommerce |
-| **Integrations** | ERP (SAP, Comarch XL, enova365, Symfonia, Subiekt GT), PIM (Pimcore, Akeneo, Ergonode), CRM (HubSpot, Pipedrive, Livespace), WMS / OMS |
+| **B2B commerce platforms** | Endora Commerce, Open Mercato, Medusa.js, Magento / Adobe Commerce, Shopware, Sylius, PrestaShop, WooCommerce |
+| **Integrations** | ERP (SAP, Comarch XL, enova365, Symfonia, Subiekt GT), PIM (Pimcore, Akeneo, UnoPIM, Ergonode), CRM (HubSpot, Pipedrive, Livespace), WMS / OMS |
 | **Custom software** | Dedicated CRMs for B2B sales teams, PWAs, internal tools |
 | **Data & AI** | LLM-based features and agents, analytics and BI (Power BI, Looker Studio, Qlik, Streamlit) |
 | **Architecture & consulting** | Platform selection, technical audits, integration architecture, build-vs-buy decisions |
@@ -83,6 +83,7 @@ cd my-shop && pnpm run dev:all
 ## 🛠️ Tech stack
 
 **Now:**
+[![Endora Commerce](https://img.shields.io/badge/Endora_Commerce-6322C8?style=flat&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIiBmaWxsPSJub25lIj4gPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNy4wMyA1KSBzY2FsZSgwLjAyMTE3MikiPiA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTEyMykiIGZpbGw9IiNmZmYiPiA8cGF0aCBkPSJNMTcyIDEyM0E2NSA2NSAwIDAgMCAxMDcgMTg4QTY1IDY1IDAgMCAwIDE3MiAyNTNMNzY5Ljk5NjA5IDI1M0w3NzAgMjUzQzk3Mi43NzgwMyAyNTMuMDEyMjggMTE0MS4zNjI4IDQwNS45MTU3NCAxMTYxLjEwOTQgNjA3LjczMDQ3TDExNjEuMTA5NCA2MDcuNzMyNDJMMTE2MS4xMDk0IDYwNy43MzQzOEMxMTcwLjgxOTkgNzA2LjkwMDI2IDEwOTQuNjQyMSA3OTAuOTAyMDYgOTk1LjAwMTk1IDc5MC45MDAzOUw5OTUgNzkwLjkwMDM5TDkwNCA3OTAuOTAwMzlMOTA0IDkyMC45MDAzOUw5OTQuOTk4MDUgOTIwLjkwMDM5QzExNjkuMzcyNSA5MjAuOTAzMzkgMTMwNy40ODA2IDc2OC42MTQyNyAxMjkwLjQ5MDIgNTk1LjA3MDMxTDEyOTAuNDkwMiA1OTUuMDY0NDVDMTI2NC4zMzY0IDMyNy43OTY0MSAxMDM4LjU0OTIgMTIzLjAxMzY0IDc3MC4wMDM5MSAxMjNBNjUgNjUgMCAwIDAgNzcwIDEyM0wxNzIgMTIzeiIvPiA8cGF0aCBkPSJtMzg4LjkyNTc4LDUwOS4xMTUyM2MtMTE5LjM5NywtMi42MjEwMS0yMzAuMTM1MjcsNjMuNDMyMDMtMjg0LjU2MjUsMTY5LjczNDM4LTU0LjQyNzIzMiwxMDYuMzAyMzUtNDMuMjc3NTM5LDIzNC43NjA1MyAyOC42NDg0NCwzMzAuMDk3NjlsMC4wMzEyLDAuMDQzIDMxMy41MzMyLDQxNC4xNDQ2YzUyLjA5MDE1LDY4Ljg1NDIgMTMyLjE0NDUzLDExMS4xMTY1IDIxOC4zODI4MSwxMTUuMjg5aDAuMDA2IDAuMDA2YzI4NC4zOTA4LDEzLjcwOTQgNTQyLjYyOTYsLTE2Ny41NzY1IDYyNi4zNTU1LC00MzkuNzA5bC0xMjQuMjUyLC0zOC4yMjg1Yy02Ni40NTE4LDIxNS45ODY5LTI3MC4xMTY2NywzNTguOTY1NC00OTUuODMyMDEsMzQ4LjA4OTktNDcuODUwMzgsLTIuMzE1Mi05Mi4xMDI2MiwtMjUuNjc4OC0xMjEuMDAxOTYsLTYzLjg4NjdsLTAuMDA4LC0wLjAxMi0zMTMuNDQzMzYsLTQxNC4wMjUzNi0wLjAwOCwtMC4wMUMxOTQuNjkyODgsODc0Ljg0Njk5IDE4OC4yMjYxMyw4MDAuMzA2MTMgMjIwLjA3ODEyLDczOC4wOTU3YzMxLjg1MzksLTYyLjIxNDE1IDk2LjExODIxLC0xMDAuNTQ1NjggMTY1Ljk5NjEsLTk5LjAxMTcyeiIvPiA8cGF0aCBkPSJtMzU2LDcyNS41YTY1LDY1IDAgMCAwLTY1LDY1IDY1LDY1IDAgMCAwIDY1LDY1aDMwMmE2NSw2NSAwIDAgMCA2NSwtNjUgNjUsNjUgMCAwIDAtNjUsLTY1eiIvPiA8L2c+IDxjaXJjbGUgY3g9IjEyNy41IiBjeT0iMTMxMy41IiByPSI5MiIgZmlsbD0iIzFBMTIyNiIvPiA8L2c+IDwvc3ZnPiA=)](https://github.com/endora-commerce/endora-commerce)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
 ![Fastify](https://img.shields.io/badge/Fastify-000000?style=flat&logo=fastify&logoColor=white)
