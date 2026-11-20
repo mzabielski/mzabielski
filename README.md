@@ -11,11 +11,21 @@ My niche is where software architecture meets business process: turning messy B2
 ## 🛒 Endora Commerce, my main project
 
 [![Repo](https://img.shields.io/badge/endora--commerce-endora--commerce-181717?style=flat&logo=github)](https://github.com/endora-commerce/endora-commerce)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/endora-commerce/endora-commerce/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/endora-commerce/endora-commerce/blob/master/LICENSE)
 [![npm](https://img.shields.io/npm/v/@endora-commerce/cli?label=npm&logo=npm)](https://www.npmjs.com/package/@endora-commerce/cli)
 [![Docs](https://img.shields.io/badge/docs-docs.commerce.endora.software-6322C8)](https://docs.commerce.endora.software)
 
 An open-source B2B and B2C commerce platform where every business capability is a module you can install, switch off or replace. I'm the creator and main contributor.
+
+[![Stars](https://img.shields.io/github/stars/endora-commerce/endora-commerce?style=flat&logo=github&label=stars)](https://github.com/endora-commerce/endora-commerce/stargazers)
+[![Forks](https://img.shields.io/github/forks/endora-commerce/endora-commerce?style=flat&logo=github&label=forks)](https://github.com/endora-commerce/endora-commerce/forks)
+[![Release](https://img.shields.io/github/v/release/endora-commerce/endora-commerce?style=flat&label=release)](https://github.com/endora-commerce/endora-commerce/releases)
+[![Last commit](https://img.shields.io/github/last-commit/endora-commerce/endora-commerce?style=flat&label=last%20commit)](https://github.com/endora-commerce/endora-commerce/commits)
+[![Commit activity](https://img.shields.io/github/commit-activity/m/endora-commerce/endora-commerce?style=flat&label=commits)](https://github.com/endora-commerce/endora-commerce/graphs/commit-activity)
+[![Contributors](https://img.shields.io/github/contributors/endora-commerce/endora-commerce?style=flat&label=contributors)](https://github.com/endora-commerce/endora-commerce/graphs/contributors)
+[![npm downloads](https://img.shields.io/npm/dm/@endora-commerce/cli?style=flat&logo=npm&label=npm%20downloads)](https://www.npmjs.com/package/@endora-commerce/cli)
+
+**By the numbers:** 8,000+ commits of my own · 13 npm packages · 65+ open-source modules · 12 CI workflows · a new release every week
 
 **Architecture**
 - **Backend:** Node.js + **Fastify**, **MikroORM** on **PostgreSQL**, Redis, Meilisearch
@@ -37,6 +47,24 @@ An open-source B2B and B2C commerce platform where every business capability is 
 npx create-endora-commerce@latest my-shop
 cd my-shop && pnpm run dev:all
 ```
+
+---
+
+## 📈 GitHub activity
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=mzabielski&theme=github-compact&hide_border=true&area=true">
+    <img alt="Contribution activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=mzabielski&theme=minimal&hide_border=true&area=true">
+  </picture>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=mzabielski&theme=github-dark-blue&hide_border=true">
+    <img alt="GitHub streak stats" src="https://streak-stats.demolab.com?user=mzabielski&hide_border=true">
+  </picture>
+</p>
 
 ---
 
