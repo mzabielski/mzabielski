@@ -126,7 +126,7 @@ cd my-shop && pnpm run dev:all
 - **2013–today:** 120+ delivered projects at Endora for clients in 5 countries, mostly manufacturing, automotive parts, technical distribution and wholesale
 - **2026:** started Endora Commerce, using AI agents and spec-driven development to turn 12+ years of B2B know-how into an open-source product
 
-I also host **[Manufaktura e-commerce](https://open.spotify.com/show/4q8gC1FjpHLAmCjYAkrK8P)**, a Polish podcast about e-commerce, and write at [michalzabielski.pl](https://michalzabielski.pl/blog).
+I also host **[Manufaktura e-commerce](https://open.spotify.com/show/4q8gC1FjpHLAmCjYAkrK8P)**, a Polish podcast about e-commerce, and write at [michalzabielski.pl](https://michalzabielski.pl/en/blog/).
 
 ---
 
@@ -134,7 +134,7 @@ I also host **[Manufaktura e-commerce](https://open.spotify.com/show/4q8gC1FjpHL
 
 Working on a B2B platform, an ERP integration, or wondering whether to build or buy? Get in touch.
 
-[![Website](https://img.shields.io/badge/michalzabielski.pl-6322C8?style=for-the-badge&logo=googlechrome&logoColor=white)](https://michalzabielski.pl)
+[![Website](https://img.shields.io/badge/michalzabielski.pl-6322C8?style=for-the-badge&logo=googlechrome&logoColor=white)](https://michalzabielski.pl/en/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mzabielskipl)
 [![Discord](https://img.shields.io/badge/Endora_Commerce-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/GJ2Yk9CvY)
 [![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/MZabielskiPL)
